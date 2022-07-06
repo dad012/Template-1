@@ -63,6 +63,18 @@ i{
     margin: auto;
     margin-top: 10px;
 }
+.items-parent{
+    width: 100%;
+    overflow: auto;
+    margin-top: 70px;
+}
+.welcome-item, .featured-item, .pricing-item , .team-item{
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+    float: left;
+    position: relative;
+}
 /* 3.0 Header Section ............................................................................ 3.0 Header Section */
 .header{
     width: 100%;
@@ -107,7 +119,7 @@ i{
 .home-section-parent{
     width: 100%;
     height: 100vh;
-    background-image: url(../images/tob.jpg);
+    background-image: url(tob.jpg);
     position: relative;
 }
 .home-item{
@@ -142,19 +154,11 @@ i{
     color: white;
     border: 1px solid blue;
 }
+.home-item button:hover{
+    opacity: .7;
+    cursor: pointer;
+}
 /* 3.2 WELCOME SECTION .......................................................................... 3.2 WELCOME SECTION */
-.welcome-items-parent, .featured-items-parent, .offer-items-parent, .pricing-items-parent, .testimontal-items-parent, .recent-items-parent{
-    width: 100%;
-    overflow: auto;
-    margin-top: 70px;
-}
-.welcome-item, .featured-item, .pricing-item , .team-item{
-    text-align: center;
-    width: 30%;
-    padding: 15px;
-    float: left;
-    position: relative;
-}
 .welcome-item{
     border: 1px solid rgb(136, 136, 136);
     line-height: 55px;
@@ -242,7 +246,7 @@ i{
     float: left;
     position: relative;    
 }
-.oip2S4{
+.offer-ip2S4{
     margin-top: 20px;
 }
 .offer-item::after{
@@ -322,6 +326,7 @@ i{
     height: 10px;
     border-radius: 50%;
     margin: 15px 5px;
+    background-color: rgb(109, 109, 109);
 }
 .choose-item-img-li:hover{
     background-color: rgb(97, 149, 255);
@@ -329,7 +334,7 @@ i{
 /* 3.6 ACHEAVES SECTION ........................................................................ 3.6 ACHEAVES SECTION */
 .acheaveS6{
     position: relative;
-    background-image: url(../images/eee.jpg);
+    background-image: url(eee.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -376,7 +381,8 @@ i{
     height: 100%;
 }
 .pricing-item:hover .pricing-item-title, .pricing-item:hover .item-number{
-    color: rgb(128, 12, 12);
+    color: red;
+    transition: .5s;
 }
 .pricing-item-title{
     font-weight: 100;
@@ -405,7 +411,7 @@ i{
 }
 /* 3.8 TESTIMONTAL SECTION .................................................................. 3.8 TESTIMONTAL SECTION */
 .testS8{
-    background-image: url(../images/zzz.png);
+    background-image: url(zzz.png);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -480,7 +486,6 @@ i{
     width: 80%;
     margin: auto;
     position: relative;
-    background-color: brown;
 }
 .team-icons{
     right: 0;
@@ -497,10 +502,10 @@ i{
     width: 40px;
     height: 40px;
     background-color: rgb(123, 167, 255);
-    color: rgb(255, 255, 255);
     margin-left: auto;
 }
 .team-icons a i{
+    color: white;
     line-height: 40px;
     font-size: larger;
 }
@@ -518,6 +523,9 @@ i{
 /* 3.10 RECENT SECTION .......................................................................... 3.10 RECENT SECTION */
 .recent-all{
     padding-bottom: 0;
+}
+.recent-items-parent{
+    background-color: rgb(248, 248, 248);
 }
 .recent-item{
     width: 30%;
