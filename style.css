@@ -1,0 +1,621 @@
+/* 1- COMMON STYLES
+   2- GENERAL STYLES
+   3- SECTIONS
+     3.0 HEADER
+     3.1 HOME SECTION
+     3.2 WELCOME SECTION
+     3.3 FEATURED SECTION
+     3.4 OFFER SECTION
+     3.5 CHOOSE SECTION
+     3.6 ACHEAVES SECTION
+     3.7 PRICING SECTION
+     3.8 TESTIMONTAL SECTION
+     3.9 TEAM SECTION
+     3.10 RECSENT SECTION
+     3.11 FOOTER SECTION
+*/
+/* 1- COMMON STYLES ................................................................................ 1- COMMON STYLES */
+.section-parent-all{
+    padding: 130px 0px 230px 0px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* 2- GENERAL STYLES .............................................................................. 2- GENERAL STYLES */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'varela round' , sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(97, 149, 255);
+}
+i{
+    color: rgb(97, 149, 255);
+}
+.div2-middle-S{
+    margin: 0% 5%;
+}
+.pcolor{
+    color: rgb(136, 153, 153);
+}
+.section-title{
+    font-size: 35px;
+    text-align: center;
+}
+.section-title-line{
+    width: 65px;
+    height: 4px;
+    background-color: rgb(65, 105, 225);
+    margin: auto;
+    margin-top: 10px;
+}
+/* 3.0 Header Section ............................................................................ 3.0 Header Section */
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    overflow: auto;
+    z-index: 5;
+}
+.header-logo{
+    width: 130px;
+    height: 50px;
+    float: left;
+}
+.header-ul{
+    margin-top: 15px;
+    margin-right: -20px;
+    float: right;
+}
+.header-li{
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+}
+.header-li a{
+    color: white ;
+}
+.header-li::after{
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 0%;
+    height: 15%;
+    background-color: blue;
+    transition: .5s;
+}
+.header-li:hover::after{
+    width: 100%;
+}
+/* 3.1 HOME SECTION ................................................................................ 3.1 HOME SECTION */
+.home-section-parent{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/tob.jpg);
+    position: relative;
+}
+.home-item{
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+.home-item-title{
+    font-size: 55px;
+}
+.home-item-text{
+    margin: 12px 0px;
+    letter-spacing: 2px;
+}
+.home-item-btn1 , .home-item-btn2{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.home-item-btn1{
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+.home-item-btn2{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+/* 3.2 WELCOME SECTION .......................................................................... 3.2 WELCOME SECTION */
+.welcome-items-parent, .featured-items-parent, .offer-items-parent, .pricing-items-parent, .testimontal-items-parent, .recent-items-parent{
+    width: 100%;
+    overflow: auto;
+    margin-top: 70px;
+}
+.welcome-item, .featured-item, .pricing-item , .team-item{
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+    float: left;
+    position: relative;
+}
+.welcome-item{
+    border: 1px solid rgb(136, 136, 136);
+    line-height: 55px;
+    padding: 30px 15px 10px 15px;
+}
+.icoS2{
+    display: block !important;
+    font-size: 25px;
+}
+.welcome-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    background-color: rgb(51, 51, 51);
+    transition: .5s;
+    z-index: -1;
+}
+.welcome-item:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.welcome-item:hover .welcome-item-title{
+    color: white;
+    transition: 1s;
+}
+.welcome-item-text{
+    letter-spacing: 2px;
+    line-height: 23px;
+}
+/* 3.3 FEATURED SECTION ........................................................................ 3.3 FEATURED SECTION */ 
+.featured-section-parent{
+    background-color: rgb(232, 232, 232);
+    padding: 130px 0px;
+}
+.featured-image{
+    width: 100%;
+    height: 100%;
+}
+.featured-item{
+    height: 350px;
+}
+.overS3{ 
+    line-height: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.5s;
+}
+.featured-item:hover .overS3{
+    visibility: visible;
+    opacity: 1;
+}
+.featured-item-text{
+    margin-top: 130px;
+    color: rgb(97, 149, 255);
+    transition: 1.5s;
+}
+.featured-item:hover .featured-item-text{
+    margin-top: 115px;
+    transition-delay: 0.15s;
+}
+.featured-item-title{
+    color: white;
+    transition-delay: .45s;
+}
+.icoS3{
+    color: rgb(90, 49, 139);
+    font-size: 20px;
+    padding: 13px;
+    margin-top: 7px;
+    background-color: rgb(97, 149, 255);
+    cursor: pointer;
+    transition-delay: 0.75s;
+}
+/* 3.4 OFFER SECTION .............................................................................. 3.4 OFFER SECTION */
+.oSP4{
+    padding: 130px 0px 10px 0px;
+}
+.offer-item{
+    width: 30%;
+    border: 1px solid rgb(168, 168, 168);
+    padding: 30px 25px 35px 15px;
+    float: left;
+    position: relative;    
+}
+.oip2S4{
+    margin-top: 20px;
+}
+.offer-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.offer-item:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.offer-item:hover .offer-item-title{
+    color: white;
+    transition: 1s;
+}
+.offer-iconS4{
+    position: absolute;
+    color: rgb(97, 149, 255);
+    font-size: 35px;
+}
+.offer-item-title , .offer-item-text{
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+.offer-item-text{
+    line-height: 25px;
+}
+/* 3.5 CHOOSE SECTION ............................................................................ 3.5 CHOOSE SECTION */
+.choose-section-parent{
+    background-color: rgb(249, 249, 249);
+    padding: 130px 0px;
+}
+.choose-items-parent{
+    width: 100%;
+    overflow: auto;
+}
+.choose-item{
+    width: 48%;
+    height: 450px;
+    float: left;
+}
+.chiS5{
+    text-align: center;
+}
+.stS5{
+    text-align: left;
+}
+.stlS5{
+    margin-left: 0;
+}
+.choose-item-text{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: large;
+    line-height: 25px;
+}
+.choose-item-ul{
+    line-height: 35px;
+}
+.choose-icoS5{
+    font-size: 22px;
+    color: rgb(97, 149, 255);
+}
+.choose-item-image{
+    width: 80%;
+    height: 90%;
+}
+.choose-item-img-li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 15px 5px;
+}
+.choose-item-img-li:hover{
+    background-color: rgb(97, 149, 255);
+}
+/* 3.6 ACHEAVES SECTION ........................................................................ 3.6 ACHEAVES SECTION */
+.acheaveS6{
+    position: relative;
+    background-image: url(../images/eee.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.acheave-items-parent{
+    overflow: auto;
+    margin-top: 130px;
+}
+.acheave-item{
+    float: left;
+    width: 23%;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.achiS6{
+    margin-left: 2%;
+}
+.acheave-icoS6{
+    font-size: 30px;
+    color: rgb(97, 149, 255);
+    padding-bottom: 20px;
+}
+/* 3.7 PRICING SECTION .......................................................................... 3.7 PRICING SECTION */
+.pricS7{
+    padding: 115px 0px;
+    background-color: rgb(232, 232, 232);
+}
+.pitS7{
+    border: 1px solid rgb(136, 136, 136);
+    color: rgb(136, 153, 153);
+    line-height: 30px;
+}
+.pricing-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.pricing-item:hover::after{
+    height: 100%;
+}
+.pricing-item:hover .pricing-item-title, .pricing-item:hover .item-number{
+    color: rgb(128, 12, 12);
+}
+.pricing-item-title{
+    font-weight: 100;
+}
+.item-number{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(97, 149, 255);
+    border-radius: 50%;
+    margin: 20px auto;
+    padding-top: 18px;
+    line-height: 40px;
+    color: black;
+}
+.item-number-title{
+    font-size: 50px;
+}
+.item-number-text{
+    font-weight: bold;
+}
+.pricing-item-btn{
+    width: 120px;
+    height: 30px;
+    border: 2px solid rgb(97, 149, 255);
+    margin: 15px;
+}
+/* 3.8 TESTIMONTAL SECTION .................................................................. 3.8 TESTIMONTAL SECTION */
+.testS8{
+    background-image: url(../images/zzz.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.testimontal-items-parent{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 110px;
+    margin-left: 120px;
+}
+.testimontal-item{
+    width: 46%;
+    color: white;
+    float: left;
+}
+.testitS8{
+    margin-left: 8%;
+}
+.testimontal-item-content{
+    overflow: auto;
+}
+.testimontal-item-image{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+.testimontal-item-title{
+    margin-top: 20px;
+}
+.testimontal-item-text{
+    color: rgb(97, 149, 255);
+}
+.testimontal-item-text2{
+    margin-left: 20px;
+    font-size: 14px;
+}
+/* 3.9 TEAM SECTION ................................................................................ 3.9 TEAM SECTION */
+.team-section-parent{
+    padding-top: 130px;
+}
+.team-items-parent{
+    width: 88%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+}
+.team-item{
+    background-color: rgb(209, 202, 202);
+}
+.team-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.team-item:hover::after{
+    height: 100%;
+    transition: 1s;
+}
+.team-item-image{
+    width: 100%;
+    height: 30%;
+}
+.team-image-icons{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    background-color: brown;
+}
+.team-icons{
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.team-item:hover .team-icons{
+    visibility: visible;
+    opacity: 1;
+}
+.team-icons a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(123, 167, 255);
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+}
+.team-icons a i{
+    line-height: 40px;
+    font-size: larger;
+}
+.team-item-name{
+    margin: 10px auto;
+}
+.team-item:hover .team-item-name{
+    color: white;
+    transition: .5s;
+}
+.team-item:hover .team-item-text{
+    color: blue;
+    transition: .5s;
+}
+/* 3.10 RECENT SECTION .......................................................................... 3.10 RECENT SECTION */
+.recent-all{
+    padding-bottom: 0;
+}
+.recent-item{
+    width: 30%;
+    padding: 0px 20px 20px 20px;
+    float: left;
+    position: relative;
+}
+.recent-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(75, 134, 253, 0.4);
+    transition: 1s;
+}
+.recent-item:hover:after{
+    height: 100%;
+}
+.recent-item img{
+    width: 75%;
+    height: 37%;
+    margin-bottom: 27px;
+}
+.recent-item-ul li{
+    display: inline;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.recent-item-title{
+    margin: 25px 0px;
+}
+.recent-item-text{
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+/* 3.11 FOOTER SECTION .......................................................................... 3.11 FOOTER SECTION */
+.footer-section-parent{
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: rgb(77, 76, 82);
+}
+.footer-image{
+    margin-top: 50px;
+    width: 160px;
+    height: 70px;
+}
+.footer-ul{
+    margin: 20px 0px;
+    color: white;    
+}
+.footer-ul li{
+    display: inline-block;
+}
+.footer-ul li i{
+    font-size: 20px;
+    line-height: 50px;
+    color: white;    
+}
+.footer-ul a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(97, 149, 255);
+    position: relative;
+    z-index: 0;
+}
+.footer-ul a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 104, 242);
+    opacity: 0;
+    z-index: -1;
+}
+.footer-ul a:hover::after{
+    border-radius: 50%;
+    opacity: .5;
+    transition: .3s;
+}
+.footer-ul a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 104, 242);
+    opacity: 0;
+    z-index: -1;
+}
+.footer-ul a:hover::before{
+    border-radius: 50%;
+    opacity: .5;
+    transition: .3s;
+}
